@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const UseStateBasics = () => {
 
-  // now we trying to be using HOOK - UseStateHook
+  // now we trying to do using HOOK - UseStateHook
   const [title, setTitle] = useState("random title");
 
   //var title got assigned value as random title 
