@@ -9,12 +9,14 @@ const UseStateObject = () => {
     exp: "2.8 years"
   });
   const handleClick =()=>{
-    setPerson({...person , job: "creative monk"})
+    // using spread operator of js , we copied whole object and changed one property of it . we can any no.of properties by mentioning it 
+    setPerson({...person , job: "creative monk", exp:"3 yrs"})
   }
   return (
         <div key={person.id}>
           <h3>{person.name}</h3>
           <h3>{person.job}</h3>
+          <h3>{person.exp}</h3>
           <button className='btn' onClick={handleClick}>Change text</button>
         </div>
       
