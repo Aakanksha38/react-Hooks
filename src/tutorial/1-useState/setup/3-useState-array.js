@@ -12,14 +12,17 @@ const UseStateArray = () => {
   soooo ==== only id=1,2,3 will be displayed .
   
   person.id === id ,,, here the item which we are trying to remove will only be displayed .
+
+  setPeople([]) => this will remove all the items , cox we are passing empty array
   */
   const removeItem =(id)=> {
-    let newPeople= people.filter((person)=>{return person.id ===id })
+    let newPeople= people.filter((person)=>{return person.id !==id })
     setPeople(newPeople);
   };
 
   return (
-    people.map((person)=>{
+    <>
+    {people.map((person)=>{
       const {id,name}=person;
 
       
@@ -30,7 +33,9 @@ const UseStateArray = () => {
           </div>
           
       );
-    })
+    })}
+    <button className='btn' onClick={()=>{setPeople([])}}>Remove All</button>
+    </>
   )
   
 };
