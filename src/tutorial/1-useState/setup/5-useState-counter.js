@@ -6,7 +6,7 @@ const UseStateCounter = () => {
   return(
     <>
     <section>
-      <h2>Counter Example</h2>
+      <h2> Regular Counter Example</h2>
       <h2>{value}</h2>
       <button className='btn' onClick={()=>{setValue(value+1)}}>Increase</button>
       <button className='btn' onClick={()=>{setValue(0)}}>Reset</button>
