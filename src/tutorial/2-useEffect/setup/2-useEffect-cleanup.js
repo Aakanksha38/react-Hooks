@@ -20,7 +20,7 @@ const UseEffectCleanup = () => {
   const checkSize =()=> {
     setSize(window.innerWidth);
   };
-  useEffect(()=>{ 
+  useEffect(()=>{
     console.log("useEffect",size);
     //comes to useEffect - so whenever there is resize of window =>"resize".. addEvenlisterner will invoke checkSize function
     /*
@@ -43,5 +43,5 @@ const UseEffectCleanup = () => {
     </>
   );
 };
-
+//trying to push 
 export default UseEffectCleanup;
