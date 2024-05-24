@@ -22,6 +22,7 @@ const UseEffectCleanup = () => {
   };
   useEffect(()=>{
     console.log("useEffect",size);
+    // whenever we want to perform certain action after certain re-render we use UseEffect
     //comes to useEffect - so whenever there is resize of window =>"resize".. addEvenlisterner will invoke checkSize function
     /*
     window.addEventListener("resize",checkSize); ==>>
@@ -40,6 +41,7 @@ const UseEffectCleanup = () => {
     <>
       <h4>Window</h4>
       <h3>{size}</h3>
+      <h2>useEffect dated on 17th may 2024</h2>
     </>
   );
 };
