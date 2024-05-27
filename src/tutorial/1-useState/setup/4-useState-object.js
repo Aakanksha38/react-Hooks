@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const UseStateObject = () => {
@@ -10,7 +11,12 @@ const UseStateObject = () => {
   });
   const handleClick =()=>{
     // using spread operator of js , we copied whole object and changed one property of it . we can any no.of properties by mentioning it 
-    setPerson({...person , job: "creative monk", exp:"3 yrs"})
+    if(person.job ==="developer"){
+      setPerson({...person ,name:"Self_flourishing", job: "creative monk", exp:"3 yrs"})
+    }else {
+      setPerson({...person , name:"Aakanksha",job: "developer", exp:"2.8 yrs"})
+    }
+    
   }
   return (
         <div key={person.id}>
