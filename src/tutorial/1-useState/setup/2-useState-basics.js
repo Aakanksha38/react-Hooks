@@ -2,12 +2,22 @@ import React, { useState } from 'react';
 
 const UseStateBasics = () => {
 
+  /*
+  ///// without HOOK (UseState) ////
+  //here wat we did is , created var sepreatly and tried to chnge the using handleclick function
+  let title = "Title";
+  const handleClick= ()=>{
+    title = "Changed Title this is";
+    console.log(title)
+  }
+  */
+
   // now we trying to do using HOOK - UseStateHook
   const [title, setTitle] = useState("random title");
 
   //var title got assigned value as random title 
   // using setTtile we are able to change the value of title .
-  //[title, setTitle] this names aare not neccesary == can guve apple, banana or nothing but for convience we use this.
+  //[title, setTitle] this names aare not neccesary == can guve apple, banana or anything but for convience we use this.
   /*
   const handleClick = () => {
     setTitle("Changed Title ")
@@ -24,14 +34,7 @@ const UseStateBasics = () => {
   };
  
 
-  /*
-  //here wat we did is , created var sepreatly and tried to chnge the using handleclick function
-  let title = "Title";
-  const handleClick= ()=>{
-    title = "Changed Title this is";
-    console.log(title)
-  }
-  */
+  
 
   return( <>
     <h2>{title}</h2>
