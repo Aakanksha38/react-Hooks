@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-
+// instead of importing we can use it as React.useState()
 const UseStateBasics = () => {
 
   /*
   ///// without HOOK (UseState) ////
-  //here wat we did is , created var sepreatly and tried to chnge the using handleclick function
+  //here wat we did is , created var sepreatly and tried to chnge the title using handleclick function
   let title = "Title";
   const handleClick= ()=>{
     title = "Changed Title this is";
@@ -15,8 +15,8 @@ const UseStateBasics = () => {
   // now we trying to do using HOOK - UseStateHook
   const [title, setTitle] = useState("random title");
 
-  //var title got assigned value as random title 
-  // using setTtile we are able to change the value of title .
+  //variable title got assigned value as random title 
+  // using setTtile functionality we are able to change the value of title .
   //[title, setTitle] this names aare not neccesary == can guve apple, banana or anything but for convience we use this.
   /*
   const handleClick = () => {
