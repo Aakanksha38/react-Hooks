@@ -23,8 +23,10 @@ const UseEffectCleanup = () => {
   useEffect(()=>{
     console.log("useEffect",size);
     // whenever we want to perform certain action after certain re-render we use UseEffect
-    //comes to useEffect - so whenever there is resize of window =>"resize".. addEvenlisterner will invoke checkSize function
+    // omes to useEffect - so whenever there is resize of window =>"resize".. addEvenlisterner will invoke checkSize function
     /*
+    /so when we use addEvenlisterner in useEffect , it call after wevery re-render - this create memory in ur cache n makes ur app use so we use cleanUp function 
+    how u write ur clean func ? u write in ur useeffect only , u write a return n thn write callback func [ ()=>{} ]
     window.addEventListener("resize",checkSize); ==>>
     there is problem , this resize event listener will call again n again and it keeps on adding on ur local db and add into ur cache which makes ur appln bulky and slow
     solution = need to use cleanup function , like after every use we have to remove/cleanup-- remove ebent listner 
@@ -33,7 +35,7 @@ const UseEffectCleanup = () => {
 
     //cleaup function== using callback func in return
     return ()=>{
-      console.log("remove");
+      console.log("CleanUp");
       window.removeEventListener("resize",checkSize);
     } 
   })
