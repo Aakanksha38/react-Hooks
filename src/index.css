@@ -195,6 +195,7 @@ p {
 }
 .item p {
   margin-bottom: 0;
+  font-size: 0.65rem;
 }
 .modal {
   position: absolute;
@@ -219,6 +220,7 @@ p {
   margin-bottom: 4rem;
   padding: 1rem 2rem;
   border-radius: var(--radius);
+  font-size: 1rem;
 }
 .form input {
   background: var(--clr-grey-10);
